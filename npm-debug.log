@@ -1,0 +1,139 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.1.1/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.1.1/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'msnodesql' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.1
+4 verbose install initial load of /home/ubuntu/workspace/package.json
+5 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/tedious/package.json
+6 verbose readDependencies loading dependencies from /home/ubuntu/workspace/package.json
+7 silly cache add args [ 'msnodesql', null ]
+8 verbose cache add spec msnodesql
+9 silly cache add parsed spec Result {
+9 silly cache add   raw: 'msnodesql',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'msnodesql',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 silly addNamed msnodesql@*
+11 verbose addNamed "*" is a valid semver range for msnodesql
+12 silly addNameRange { name: 'msnodesql', range: '*', hasData: false }
+13 silly mapToRegistry name msnodesql
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/msnodesql
+17 verbose addNameRange registry:https://registry.npmjs.org/msnodesql not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/msnodesql
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 3:29:38 AM
+21 verbose request id 5406cb15073f0d2c
+22 http request GET https://registry.npmjs.org/msnodesql
+23 http 200 https://registry.npmjs.org/msnodesql
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"9785T0FDLCIU6KPM9CJ58WJQV"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'content-length': '13013',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Wed, 02 Mar 2016 03:29:38 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-hkg6822-HKG',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1456889378.701922,VS0,VE220',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving msnodesql to /home/ubuntu/.npm/registry.npmjs.org/msnodesql/.cache.json
+26 silly addNameRange number 2 { name: 'msnodesql', range: '*', hasData: true }
+27 silly addNameRange versions [ 'msnodesql', [ '0.1.0', '0.2.0', '0.2.1' ] ]
+28 silly addNamed msnodesql@0.2.1
+29 verbose addNamed "0.2.1" is a plain semver version for msnodesql
+30 silly mapToRegistry name msnodesql
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/msnodesql
+34 verbose addRemoteTarball https://registry.npmjs.org/msnodesql/-/msnodesql-0.2.1.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/msnodesql/-/msnodesql-0.2.1.tgz',
+35 verbose addRemoteTarball   '3ce8ade4a8c016a9aa9f942810135a73c0f2c8eb' ]
+36 info retry fetch attempt 1 at 3:29:38 AM
+37 info attempt registry request try #1 at 3:29:38 AM
+38 http fetch GET https://registry.npmjs.org/msnodesql/-/msnodesql-0.2.1.tgz
+39 http fetch 200 https://registry.npmjs.org/msnodesql/-/msnodesql-0.2.1.tgz
+40 silly fetchAndShaCheck shasum 3ce8ade4a8c016a9aa9f942810135a73c0f2c8eb
+41 verbose addTmpTarball /tmp/npm-2779-8308496f/registry.npmjs.org/msnodesql/-/msnodesql-0.2.1.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for msnodesql@0.2.1
+43 silly cache afterAdd msnodesql@0.2.1
+44 verbose afterAdd /home/ubuntu/.npm/msnodesql/0.2.1/package/package.json not in flight; writing
+45 verbose afterAdd /home/ubuntu/.npm/msnodesql/0.2.1/package/package.json written
+46 silly install resolved [ { name: 'msnodesql',
+46 silly install resolved     description: 'Microsoft Driver for Node.js for SQL Server',
+46 silly install resolved     author: { name: 'Microsoft Corp.' },
+46 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+46 silly install resolved     version: '0.2.1',
+46 silly install resolved     keywords:
+46 silly install resolved      [ 'sql',
+46 silly install resolved        'database',
+46 silly install resolved        'mssql',
+46 silly install resolved        'azure',
+46 silly install resolved        'sqlserver',
+46 silly install resolved        'tds',
+46 silly install resolved        'microsoft',
+46 silly install resolved        'msnodesql',
+46 silly install resolved        'node-sqlserver' ],
+46 silly install resolved     homepage: 'https://github.com/WindowsAzure/node-sqlserver',
+46 silly install resolved     bugs: 'https://github.com/WindowsAzure/node-sqlserver/issues',
+46 silly install resolved     licenses: [ [Object] ],
+46 silly install resolved     main: './lib/sql.js',
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'git://github.com/WindowsAzure/node-sqlserver.git' },
+46 silly install resolved     engines: { node: '>=0.6' },
+46 silly install resolved     devDependencies: { mocha: '0.14.x', async: '0.1.x' },
+46 silly install resolved     os: [ 'win32' ],
+46 silly install resolved     scripts: { install: 'node scripts/install.js' },
+46 silly install resolved     readme: '# Microsoft Driver for Node.js for SQL Server\r\n\r\nThe Microsoft Driver for Node.js for SQL Server allows Node.js applications on\r\nMicrosoft Windows and Microsoft Windows Azure to access Microsoft SQL Server \r\nand Microsoft Windows Azure SQL Database.\r\n\r\nThis is an initial preview release, and is not production ready. We welcome any\r\nfeedback, fixes and contributions from the community at this very early stage.\r\n\r\n## Prerequisites\r\n\r\nThe following prerequisites are necessary prior to using the driver:\r\n\r\n* Node.js - use the latest version if possible, but it has been tested on node\r\n0.6.10 and later\r\n\r\n* node-gyp - latest version installed globally (npm install -g node-gyp)\r\n\r\n* python 2.7.x - for node-gyp (make sure it is in the path)\r\n\r\n* Visual C++ 2010 - the Express edition is freely available from \r\n[Microsoft][visualstudio]\r\n\r\n* SQL Server Native Client 11.0 - available as Microsoft SQL Server 2012 \r\nNative Client found in the [SQL Server 2012 Feature Pack][sqlncli]\r\n\r\n## Build\r\n\r\nTo build the driver, first node-gyp must configure the appropriate build files.\r\n\r\n    node-gyp configure\r\n\r\nUse node-gyp to build the driver:\r\n\r\n    node-gyp build\r\n\r\nOr to build the debug version:\r\n\r\n    node-gyp build --debug\r\n\r\nThen copy the sqlserver.node file from the build\\\\(Release|Debug) directory to\r\nthe lib directory.  If you would like to use Visual C++ to debug the driver,\r\nalso copy the sqlserver.pdb file from the same directory.\r\n\r\n## Test\r\n\r\nIncluded are a few unit tests.  They require mocha, async, and assert to be \r\ninstalled via npm.  Also, set the variables in test-config.js, then run the \r\ntests as follows:\r\n\r\n    cd test\r\n    node runtests.js\r\n\r\n## Known Issues\r\n\r\nWe are aware that many features are still not implemented, and are working to\r\nupdate these. Please visit the [project on Github][project] to view \r\noutstanding [issues][issues].\r\n\r\n## Usage\r\n\r\nFor now, please see the unit tests for usage examples.\r\n\r\n## Contribute Code\r\n\r\nIf you would like to become an active contributor to this project please follow the instructions provided in [the Contribution Guidelines][contribute].\r\n\r\n## License\r\n\r\nThe Microsoft Driver for Node.js for SQL Server is licensed under the Apache\r\n2.0 license.  See the LICENSE file for more details.\r\n\r\n[visualstudio]: http://www.microsoft.com/visualstudio/\r\n\r\n[sqlncli]: http://www.microsoft.com/en-us/download/details.aspx?id=29065\r\n\r\n[project]: https://github.com/windowsazure/node-sqlserver\r\n\r\n[issues]: https://github.com/windowsazure/node-sqlserver/issues\r\n\r\n[contribute]: https://github.com/WindowsAzure/node-sqlserver/blob/master/CONTRIBUTING.md\r\n\r\n\r\n\r\n',
+46 silly install resolved     _id: 'msnodesql@0.2.1',
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '3ce8ade4a8c016a9aa9f942810135a73c0f2c8eb',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/msnodesql/-/msnodesql-0.2.1.tgz' },
+46 silly install resolved     _npmVersion: '1.1.62',
+46 silly install resolved     _npmUser: { name: 'jguerin', email: 'jguerin@microsoft.com' },
+46 silly install resolved     maintainers: [ [Object], [Object] ],
+46 silly install resolved     directories: {},
+46 silly install resolved     _shasum: '3ce8ade4a8c016a9aa9f942810135a73c0f2c8eb',
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/msnodesql/-/msnodesql-0.2.1.tgz',
+46 silly install resolved     _from: 'msnodesql@*' } ]
+47 info install msnodesql@0.2.1 into /home/ubuntu/workspace
+48 info installOne msnodesql@0.2.1
+49 verbose installOne of msnodesql to /home/ubuntu/workspace not in flight; installing
+50 verbose lock using /home/ubuntu/.npm/_locks/msnodesql-39128894d6db4802.lock for /home/ubuntu/workspace/node_modules/msnodesql
+51 verbose unlock done using /home/ubuntu/.npm/_locks/msnodesql-39128894d6db4802.lock for /home/ubuntu/workspace/node_modules/msnodesql
+52 verbose stack Error: Unsupported
+52 verbose stack     at checkPlatform (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/npm-install-checks/index.js:47:14)
+52 verbose stack     at Array.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+52 verbose stack     at LOOP (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+52 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+52 verbose stack     at checkEngine (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/npm-install-checks/index.js:26:10)
+52 verbose stack     at Array.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+52 verbose stack     at LOOP (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+52 verbose stack     at chain (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+52 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/install.js:1038:5
+52 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/utils/locker.js:39:7
+53 verbose pkgid msnodesql@0.2.1
+54 verbose cwd /home/ubuntu/workspace
+55 error Linux 4.2.0-c9
+56 error argv "/home/ubuntu/.nvm/versions/node/v4.1.1/bin/node" "/home/ubuntu/.nvm/versions/node/v4.1.1/bin/npm" "install" "msnodesql"
+57 error node v4.1.1
+58 error npm  v2.14.4
+59 error code EBADPLATFORM
+60 error notsup Unsupported
+60 error notsup Not compatible with your operating system or architecture: msnodesql@0.2.1
+60 error notsup Valid OS:    win32
+60 error notsup Valid Arch:  any
+60 error notsup Actual OS:   linux
+60 error notsup Actual Arch: x64
+61 verbose exit [ 1, true ]
